@@ -1,0 +1,12 @@
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\BlogService.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\BlogService.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\BlogData.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\Common.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\EntityFramework.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\BlogData.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\Common.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\EntityFramework.xml
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Release\zh-Hans\EntityFramework.resources.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Release\BlogService.csprojResolveAssemblyReference.cache
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Release\BlogService.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Release\BlogService.pdb

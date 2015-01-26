@@ -1,0 +1,224 @@
+body{
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		background: #FCFCFC;
+		overflow-x:hidden; 
+		font-family: "Microsoft Yahei","冬青黑体简体中文 w3","宋体";
+	}
+	#nav_main{
+		width: 1124px;
+	}
+	#header_top{
+		width: 1124px;
+		margin: auto;
+		height: 100px;
+	}
+	#header_top_left{
+		margin-top:20px;
+		float: left; 
+	}
+	#header_top_left img{
+		float: left;
+	}
+	#header_top_left div{
+		float: left;
+		padding-top: 12px;
+		margin-left: 10px;
+	}
+	#header_top_left div h3{
+		margin: 0px;
+		font-weight: bold;
+	}
+	#header_top_right{
+		width: 350px;
+		float:right;
+		margin-top: 20px;
+	}
+	#header_top_right hr{
+		margin: 8px  0px;
+	}
+	#header_top_right_bottom a{
+		text-decoration: none;
+		color:#000;
+		cursor: pointer;
+	}
+	#search{
+		float:right;
+	}
+	#content{
+		width: 1124px;
+		margin:auto;
+	}
+	#content_left{
+		float:left;
+		width: 750px;
+	}
+	hr{
+		margin:8px;
+	}
+	.content_left_body_first{
+		margin-top: 10px;
+	}
+	#content_right{
+		width: 360px;
+		float:right;
+	}
+	.widget_calendar {
+		overflow: hidden;
+	}
+	.widget {
+		clear: both;
+		margin-bottom: 20px;
+		background-color: #fff;
+		border:#DDDDDD 1px solid;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		box-sizing: border-box;
+	}
+	#calendar_wrap {
+		margin: 0 15px 10px;
+	}
+	.widget_calendar table {
+		width: 100%;
+		text-align: center;
+	}
+	table {
+		display: table;
+		border-collapse: separate;
+		border-spacing: 2px;
+		border-color: gray;
+	}
+	.widget_calendar table caption {
+		padding: 10px 0 5px;
+		font-size: 15px;
+	}
+	caption {
+		display: table-caption;
+		text-align: -webkit-center;
+	}
+	thead {
+		display: table-header-group;
+		vertical-align: middle;
+		border-color: inherit;
+	}
+	thead th {
+		background-color: #fbfbfb;
+	}
+	tr {
+		display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+		text-align: center;
+	}
+	.widget_calendar table thead th {
+		padding: 5px 3px;
+		border: 1px solid #eee;
+		font-weight: bold;
+		text-align: center;
+		display: table-cell;
+		vertical-align: inherit;
+	}
+	tbody {
+		display: table-row-group;
+		vertical-align: middle;
+		border-color: inherit;
+	}
+	tr {
+		display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+	}
+	tbody td, .widget_calendar table tfoot td, .widget_calendar table thead th {
+		padding: 5px 3px;
+		border: 1px solid #eee;
+		display: table-cell;
+		vertical-align: inherit;
+	}
+	.widget_calendar table tbody td a {
+		display: block;
+		margin: 0 3px;
+		background-color: #00a67c;
+		color: #fff;
+	}
+	#footer{
+		height: 30px;
+		padding-top: 12px;
+		text-align: center;
+		border-top:#DDDDDD 1px solid;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		box-sizing: border-box;
+		clear: both;
+	}
+	.panel_img img{
+		width: 100%;
+	}
+	.modal-content {
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #999;
+		border: 1px solid rgba(0,0,0,0.2);
+		border-radius: 6px;
+		outline: 0;
+		-webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+		box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+		background-clip: padding-box;
+	}
+	.pagination{
+		float:right;
+	}
+	h2 span{
+		font-size: 14px;
+	}
+	.panel-body hr{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.panel-footer img{
+		float: left;
+	}
+	.author{
+		float: left;
+		padding-top: 20px;
+	}
+	.clear{
+		clear: both;
+	}
+	.panel-heading a{
+		text-decoration: none;
+		color:#000;
+	}
+	.panel-heading a:hover{
+		text-decoration: underline;
+	}
+	.panel-body a{
+		text-decoration: none;
+		color:#000;
+	}
+	.panel-body a:hover{
+		text-decoration: underline;
+	}
+	.floatButton{
+		position: fixed;
+		bottom: 200px;
+		right: 0px;
+	}
+    .panel-body h2 {
+        display : inline;
+    }
+    .add{
+		float:right;
+		margin-top: -5px;
+		margin-right: 20px;
+	}
+	.table{
+		border-collapse: inherit;
+		border-spacing: inherit;
+		vertical-align: center;
+	}
+	.table td,th{
+		text-align: center;
+	}

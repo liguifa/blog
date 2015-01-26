@@ -1,0 +1,12 @@
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Debug\BlogService.csprojResolveAssemblyReference.cache
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\BlogService.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\BlogService.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\BlogData.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\Common.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\EntityFramework.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\BlogData.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\Common.pdb
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\EntityFramework.xml
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Debug\BlogService.dll
+c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogService\obj\Debug\BlogService.pdb
