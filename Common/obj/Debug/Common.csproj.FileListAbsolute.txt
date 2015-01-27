@@ -7,3 +7,12 @@ c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\bin\Debug\Comm
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\bin\Debug\EntityFramework.xml
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
 C:\Users\贵发\Documents\Visual Studio 2013\Projects\Blog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\Common.dll.config
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\Common.dll
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\Common.pdb
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\EntityFramework.dll
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\EntityFramework.xml
+C:\Users\贵发\Desktop\Blog\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\贵发\Desktop\Blog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\贵发\Desktop\Blog\Common\obj\Debug\Common.dll
+C:\Users\贵发\Desktop\Blog\Common\obj\Debug\Common.pdb

@@ -7,3 +7,12 @@ c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\bin\Release\zh
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\obj\Release\Common.dll
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\Common\obj\Release\Common.pdb
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\Common.dll.config
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\Common.dll
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\Common.pdb
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\EntityFramework.dll
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\EntityFramework.xml
+C:\Users\贵发\Desktop\Blog\Common\bin\Release\zh-Hans\EntityFramework.resources.dll
+C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.dll
+C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.pdb

@@ -9,3 +9,14 @@ c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogData\bin\Release\
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogData\obj\Release\BlogData.csprojResolveAssemblyReference.cache
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogData\obj\Release\BlogData.dll
 c:\Users\贵发\documents\visual studio 2013\Projects\Blog\BlogData\obj\Release\BlogData.pdb
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\BlogData.dll.config
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\BlogData.dll
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\BlogData.pdb
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\Common.dll
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\EntityFramework.dll
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\Common.pdb
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\EntityFramework.xml
+C:\Users\贵发\Desktop\Blog\BlogData\bin\Release\zh-Hans\EntityFramework.resources.dll
+C:\Users\贵发\Desktop\Blog\BlogData\obj\Release\BlogData.csprojResolveAssemblyReference.cache
+C:\Users\贵发\Desktop\Blog\BlogData\obj\Release\BlogData.dll
+C:\Users\贵发\Desktop\Blog\BlogData\obj\Release\BlogData.pdb

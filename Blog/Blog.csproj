@@ -140,6 +140,24 @@
     <Content Include="Themes\Lib\bootstrap\js\bootstrap.js" />
     <Content Include="Themes\Lib\bootstrap\js\bootstrap.min.js" />
     <Content Include="Themes\Lib\bootstrap\js\npm.js" />
+    <Content Include="Themes\Lib\wangEditor\.gitattributes" />
+    <Content Include="Themes\Lib\wangEditor\.gitignore" />
+    <Content Include="Themes\Lib\wangEditor\css\wangEditor-1.1.0-min.css" />
+    <Content Include="Themes\Lib\wangEditor\demo.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_basic.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_head.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_indent.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_insertCode.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_menuConfig.html" />
+    <Content Include="Themes\Lib\wangEditor\demo_upload.html" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\cssWidthCDN\font-awesome.min_widthCDN.css" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\css\font-awesome-ie7.min.css" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Themes\Lib\wangEditor\js\jquery-1.10.2.min.js" />
+    <Content Include="Themes\Lib\wangEditor\js\wangEditor-1.1.0-min.js" />
+    <Content Include="Themes\Lib\wangEditor\js\wangEditor-1.1.0.js" />
+    <Content Include="Themes\Lib\wangEditor\js\wangHighLighter-1.0.0-min.js" />
     <Content Include="Themes\Music\index.mp3" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -178,6 +196,15 @@
     <Content Include="Views\Articles\2015012021021111.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\LoginFailure.cshtml" />
+    <Content Include="Views\Admin\ArticleManagement.cshtml" />
+    <Content Include="Views\Admin\AddArticle.cshtml" />
+    <Content Include="Themes\Lib\wangEditor\css\wangEditor-1.1.0.less" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="Themes\Lib\wangEditor\README.md" />
+    <Content Include="Views\Admin\AddArticleIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogService\BlogService.csproj">

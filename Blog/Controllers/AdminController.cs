@@ -22,9 +22,20 @@ namespace Blog.Controllers
             return View();
         }
 
-        public ActionResult ArticleManagement()
+        public ActionResult ArticleManagement(int pageIndex=1)
         {
-            ViewBag.list = new UserOper().GetUserList();
+            ViewBag.list = new ArticleOper().GetArticleList(pageIndex,20);
+            return View();
+        }
+
+        public ActionResult AddArticle()
+        {
+            return View();
+        }
+        [ValidateInput(false)]
+        public ActionResult AddArticleIn(string title,string brief,string body,string type)
+        {
+            new ArticleOper().AddArticle(title, brief, body,type, Server.MapPath("/Views/Articles/"));
             return View();
         }
 

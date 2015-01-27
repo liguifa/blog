@@ -20,3 +20,31 @@
     $(".navbar-nav li:eq(" + num + ")").addClass("active");
     $(".panel-body>h2").text(title);
 }
+
+$(document).ready(function ()
+{
+    $("#mp3").click(function ()
+    {
+        if (document.getElementById("music").paused)
+        {
+            document.getElementById("music").play();
+            $("#mp3>span").removeClass("glyphicon-volume-off");
+            $("#mp3>span").addClass("glyphicon-volume-down");
+        }
+        else
+        {
+            document.getElementById("music").pause();
+            $("#mp3>span").removeClass("glyphicon-volume-down");
+            $("#mp3>span").addClass("glyphicon-volume-off");
+        }
+    });
+
+    $("#goTop").click(function ()
+    {
+        $(window).scrollTop(0);
+    });
+    $("#goBottom").click(function ()
+    {
+        $(window).scrollTop($(window).height());
+    });
+});

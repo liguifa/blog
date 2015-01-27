@@ -1,0 +1,174 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <title>添加文章</title>
+    <link href="~/Themes/Lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Themes/Css/global.css" rel="stylesheet" />
+    <link href="~/Themes/Lib/wangEditor/css/wangEditor-1.1.0-min.css" rel="stylesheet" />
+    <link href="~/Themes/Lib/wangEditor/fontawesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Themes/Js/jquery.min.js"></script>
+    <script src="~/Themes/Js/global.js"></script>
+    <script src="~/Themes/Lib/wangEditor/js/wangEditor-1.1.0-min.js"></script>
+    <script src="~/Themes/Lib/wangEditor/js/wangHighLighter-1.0.0-min.js"></script>
+</head>
+<body>
+    <div id="page">
+        <!-- 顶部开始 -->
+        <div id="header">
+            <!-- 顶部部分开始 -->
+            <div id="header_top">
+                <div id="header_top_left">
+                    <img src="/Themes/Images/me.png" />
+                    <div>
+                        <h3>发哥的网站</h3>
+                        <span>道 可道 非常道 名 可名 非常名</span>
+                    </div>
+                </div>
+                <div id="header_top_right">
+                    <span id="header_top_right_top">2015年01月17日，星期六</span>
+                    <hr />
+                    <span id="header_top_right_bottom">登录：<a data-toggle="modal" data-target=".login">本地账号</a></span>
+
+                    <!-- Small modal -->
+                    <div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title"><strong>用户登录</strong></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group" style="margin:10px 10px 20px 100px">
+                                        <span class="input-group-addon" style="width:10px;">用户名</span>
+                                        <input type="text" class="form-control" name="username" id="username" style="width:300px;">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="input-group" style="margin:0px 10px 0px 100px">
+                                        <span class="input-group-addon" style="width:10px;">密&nbsp;&nbsp;&nbsp;码</span>
+                                        <input type="password" class="form-control" name="password" id="password" style="width:300px;">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="login()">登录</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 音乐 -->
+                <!-- <audio src="Music/index.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio> -->
+            </div>
+            <!-- 导航条开始 -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid" id="nav_main">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">Liguifa</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/Home/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                            <li class="active"><a href="/Admin/Index">人员管理</a></li>
+                            <li><a href="/Admin/ArticleManagement">文章管理</a></li>
+                        </ul>
+                        <div id="search">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索..." />
+                                </div>
+                                <button type="submit" class="btn btn-default">搜一下</button>
+                            </form>
+                        </div>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- 导航条结束 -->
+        </div>
+        <div id="content">
+            <form action="/Admin/AddArticleIn" method="post">
+                <div class="input_article input-group input-group-lg">
+                    <span class="input-group-addon">标题</span>
+                    <input type="text" name="title" class="form-control" placeholder="请输入少于50个汉字！">
+                </div>
+
+                <div class="input_article input-group input-group-lg">
+                    <span class="input-group-addon">摘要</span>
+                    <input type="text" name="brief" class="form-control" placeholder="请输入少于200个汉字！">
+                </div>
+
+                <div class="input_article input-group input-group-lg">
+                    <span class="input-group-addon">类型</span>
+                    <select class="selectpicker" name="type" data-style="btn-primary">
+                        <option value="1">技术学习</option>
+                        <option value="2">编程博文</option>
+                        <option value="3">美文分享</option>
+                    </select>
+                </div>
+
+                    <div id='txtDiv' style='border:1px solid #cccccc; height:240px;'>
+                        <p>欢迎使用<b>wangEditor</b>，请输入内容...</p>
+                    </div>
+
+                    <script type="text/javascript">
+                        var $editor;
+                        $(function ()
+                        {
+                            //一句话，即可把一个div 变为一个富文本框！o(∩_∩)o
+                            // var $editor = $('#txtDiv').wangEditor();
+
+                            // //获取富文本框的html
+                            // var html = $editor.html();
+
+                            // //获取富文本框的txt
+                            // var txt = $editor.text();
+
+                            // //设置富文本框的高度
+                            // $editor.height(500);
+
+                            // //修改富文本框中的内容
+                            // $editor.html('<p>修改后的内容。。。</p>');
+
+
+                            //强制自定义配置菜单
+                            // var $editor = $('#txtDiv').wangEditor({
+                            // 	menuConfig: ['bold', '|', 'italic']
+                            // });
+
+                            //配置隐藏菜单
+                            $editor = $('#txtDiv').wangEditor({
+                                hideMenuConfig: ['fontFamily', 'fontSize', '|']
+                            });
+
+                        });
+                        function submit_artile()
+                        {
+                            $("#body").val($editor.html());
+                        }
+                    </script>
+
+                    <input id="body" name="body" type="hidden" />
+
+                    <button type="submit" id="submit" onclick="submit_artile()" class="btn btn-primary">
+                        确定发布
+                    </button>
+</form>
+        </div>
+        <div id="footer">
+            &copy2015 李贵发 版权所有
+        </div>
+    </div>
+</body>
+</html>
