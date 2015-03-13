@@ -13,11 +13,19 @@ namespace Blog
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-           // routes.MapRoute(
-           //     name: "list",
-           //     url: "{controller}/{action}/{type}",
-           //     defaults: new { controller = "Home", action = "List", type = UrlParameter.Optional}
-           // );
+            routes.MapRoute(
+              name: "html",
+              url: "{controller}/{action}.html",
+              defaults: new { controller = "Home", action = "Index" }
+          );
+
+            routes.MapRoute(
+               name: "paraesHtml",
+               url: "{controller}/{action}/{type}/{num}.html",
+               defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional, num = UrlParameter.Optional }
+           );
+
+
 
             routes.MapRoute(
                name: "Default",
@@ -26,18 +34,10 @@ namespace Blog
            );
 
             routes.MapRoute(
-               name: "contetn",
-               url: "{controller}/{action}/{type}/{num}",
-               defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional,num = UrlParameter.Optional }
-           );
-
-           // routes.MapRoute(
-           //    name: "index",
-           //    url: "{controller}/{action}.{html}",
-           //    defaults: new { controller = "Home", action = "Index", html = "html" }
-           //);
-
-           
+   name: "contetn",
+   url: "{controller}/{action}/{type}/{num}",
+   defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional, num = UrlParameter.Optional }
+);
         }
     }
 }

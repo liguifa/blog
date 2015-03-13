@@ -20,3 +20,14 @@ C:\Users\贵发\Desktop\Blog\BlogData\bin\Debug\zh-Hans\EntityFramework.resource
 C:\Users\贵发\Desktop\Blog\BlogData\obj\Debug\BlogData.csprojResolveAssemblyReference.cache
 C:\Users\贵发\Desktop\Blog\BlogData\obj\Debug\BlogData.dll
 C:\Users\贵发\Desktop\Blog\BlogData\obj\Debug\BlogData.pdb
+E:\项目\blog\blog\BlogData\bin\Debug\BlogData.dll.config
+E:\项目\blog\blog\BlogData\bin\Debug\BlogData.dll
+E:\项目\blog\blog\BlogData\bin\Debug\BlogData.pdb
+E:\项目\blog\blog\BlogData\bin\Debug\Common.dll
+E:\项目\blog\blog\BlogData\bin\Debug\EntityFramework.dll
+E:\项目\blog\blog\BlogData\bin\Debug\Common.pdb
+E:\项目\blog\blog\BlogData\bin\Debug\EntityFramework.xml
+E:\项目\blog\blog\BlogData\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\项目\blog\blog\BlogData\obj\Debug\BlogData.csprojResolveAssemblyReference.cache
+E:\项目\blog\blog\BlogData\obj\Debug\BlogData.dll
+E:\项目\blog\blog\BlogData\obj\Debug\BlogData.pdb

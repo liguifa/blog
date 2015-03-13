@@ -1,4 +1,5 @@
 ﻿using BlogService;
+using Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,30 +13,36 @@ namespace Blog.Controllers
         //
         // GET: /Admin/
 
-        public ActionResult Index(string username,string password)
+        [HttpPost]
+        public ActionResult Index(string username, string password)
         {
             if (!new UserOper().Login(username, password))
             {
                 return View("LoginFailure");
             }
+            HttpContext.Session["admin"] = username;
             ViewBag.list = new UserOper().GetUserList();
             return View();
         }
 
-        public ActionResult ArticleManagement(int pageIndex=1)
+        [UserAuthorization("admin")]
+        public ActionResult ArticleManagement(int pageIndex = 1)
         {
-            ViewBag.list = new ArticleOper().GetArticleList(pageIndex,20);
+            ViewBag.list = new ArticleOper().GetArticleList(pageIndex, 20);
             return View();
         }
 
+        [UserAuthorization("admin")]
         public ActionResult AddArticle()
         {
             return View();
         }
+
+        [UserAuthorization("admin")]
         [ValidateInput(false)]
-        public ActionResult AddArticleIn(string title,string brief,string body,string type)
+        public ActionResult AddArticleIn(string title, string brief, string body, string type)
         {
-            new ArticleOper().AddArticle(title, brief, body,type, Server.MapPath("/Views/Articles/"));
+            new ArticleOper().AddArticle(title, brief, body, type, Server.MapPath("/Views/Articles/"));
             return View();
         }
 
