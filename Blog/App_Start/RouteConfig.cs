@@ -20,6 +20,12 @@ namespace Blog
           );
 
             routes.MapRoute(
+                name: "action",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index" }
+          );
+
+            routes.MapRoute(
                name: "paraesHtml",
                url: "{controller}/{action}/{type}/{num}.html",
                defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional, num = UrlParameter.Optional }
@@ -34,10 +40,10 @@ namespace Blog
            );
 
             routes.MapRoute(
-   name: "contetn",
-   url: "{controller}/{action}/{type}/{num}",
-   defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional, num = UrlParameter.Optional }
-);
+                name: "contetn",
+                url: "{controller}/{action}/{type}/{num}",
+                defaults: new { controller = "Home", action = "Content", type = UrlParameter.Optional, num = UrlParameter.Optional }
+            );
         }
     }
 }

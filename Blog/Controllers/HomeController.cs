@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
@@ -39,6 +40,7 @@ namespace Blog.Controllers
             //ViewBag.html = new HtmlOperation().ReadHtml(Server.MapPath("/Articles") + "/2015012021021111.html");
             ViewBag.num = num;
             ViewBag.type = type;
+            ViewBag.articleMsg = new ArticleOper().GetArticleMsgByNum(num);
             return View();
         }
 
@@ -47,5 +49,19 @@ namespace Blog.Controllers
             return PartialView("../Articles/"+num);
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public string Joke()
+        {
+            return Common.Gboal.Joke();
+        }
+
+        public string GetCalendarData(int month,int year)
+        {
+            return new ArticleOper().GetCalendarData(month,year);
+        }
     }
 }

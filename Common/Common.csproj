@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListExtension.cs" />
+    <Compile Include="Gboal.cs" />
     <Compile Include="HtmlOperation.cs" />
     <Compile Include="Md5.cs" />
     <Compile Include="Models\Article.cs">

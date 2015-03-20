@@ -1,0 +1,368 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name="keywords" content="程序员,博客,个人博客,发哥,发哥的网站" />
+    <meta name="description" content="发哥，一个有梦想，有个性的平凡人..." />
+    <title>发哥的网站</title>
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Css/person.css" />
+    <script type="text/javascript" src="/Themes/Js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Themes/Lib/bootstrap/Js/bootstrap.min.js"></script>
+    <script src="/Themes/Js/global.js"></script>
+    <script type="text/javascript" src="/Themes/Js/person.js"></script>
+</head>
+<body>
+    <div id="page">
+        <!-- 顶部开始 -->
+        <div id="header">
+            <!-- 顶部部分开始 -->
+            <div id="header_top">
+                <div id="header_top_left">
+                    <img src="/Themes/Images/me.png" />
+                    <div>
+                        <h3>发哥的网站</h3>
+                        <span>道 可道 非常道 名 可名 非常名</span>
+                    </div>
+                </div>
+                <div id="header_top_right">
+                    <span id="header_top_right_top">2015年01月17日，星期六</span>
+                    <hr />
+                    <span id="header_top_right_bottom">登录：<a data-toggle="modal" data-target=".login">本地账号</a></span>
+
+                    <!-- Small modal -->
+                    <div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title"><strong>用户登录</strong></h4>
+                                </div>
+                                <form action="/Admin/Index" method="post">
+                                    <div class="modal-body">
+                                        <div class="input-group" style="margin:10px 10px 20px 100px">
+                                            <span class="input-group-addon" style="width:10px;">用户名</span>
+                                            <input type="text" class="form-control" name="username" id="username" style="width:300px;">&nbsp;&nbsp;
+                                        </div>
+                                        <div class="input-group" style="margin:0px 10px 0px 100px">
+                                            <span class="input-group-addon" style="width:10px;">密&nbsp;&nbsp;&nbsp;码</span>
+                                            <input type="password" class="form-control" name="password" id="password" style="width:300px;">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary" id="login">登录</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 音乐 -->
+                <audio id="music" src="/Themes/Music/index.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
+            </div>
+            <!-- 导航条开始 -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid" id="nav_main">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">Liguifa</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/Home/Index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                            <li><a href="/Home/List/Technology/1.html">技术学习</a></li>
+                            <li><a href="/Home/List/Edit/1.html">编程博文</a></li>
+                            <li><a href="/Home/List/Essay/1.html">美文分享</a></li>
+                            <li class="active"><a href="/Home/List/Technology.html">个人简介</a></li>
+                        </ul>
+                        <div id="search">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索..." />
+                                </div>
+                                <button type="submit" class="btn btn-default">搜一下</button>
+                            </form>
+                        </div>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- 导航条结束 -->
+        </div>
+        <div id="content">
+            <div id="content_left" class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <a class="thumbnail">
+                                <img src="/Themes/Images/person.jpg" alt="李贵发">
+                            </a>
+                        </div>
+                        <div class="person_word">
+                            <ul>
+                                <li>姓名：李贵发</li>
+                                <li>性别：看的出来</li>
+                                <li>专业：计算机科学与技术</li>
+                                <li>学校：大连工业大学</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="list-group">
+                            <li class="list-group-item">语言：熟悉C#、PHP，会C++</li>
+                            <li class="list-group-item">数据库：mssql、mysql</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content_right">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <!-- 第一个 -->
+                        <div class="panel panel-default pojection">
+                            <div class="panel-heading">无机材料教学中心网站</div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>语言</th>
+                                            <th>名称</th>
+                                            <th>人数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2014年(大二)</td>
+                                            <td>C#</td>
+                                            <td>无机材料教学中心网站</td>
+                                            <td>二人</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <div class="panel_change">
+                                    <button disabled="false" type="button" class="btn btn-default change_top" title="上一个">
+                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                    </button>
+                                </div>
+                                <div class="panel_btn">
+                                    <button type="button" class="btn btn-default" title="查看源码">
+                                        <a href="https://github.com/liguifa/wlhx" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                    </button>
+                                    <button type="button" class="btn btn-default" title="查看网站">
+                                        <a href="http://wjcl.yjzx.dlpu.edu.com" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 第二个 -->
+                        <div class="panel panel-default pojection noDisplay">
+                            <div class="panel-heading">大连工业大学高校开源社区</div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>语言</th>
+                                            <th>名称</th>
+                                            <th>人数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2014—2015年(大三)</td>
+                                            <td>PHP</td>
+                                            <td>大连工业大学高校开源社区</td>
+                                            <td>一人</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <div class="panel_change">
+                                    <button type="button" class="btn btn-default change_top" title="上一个">
+                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                    </button>
+                                </div>
+                                <div class="panel_btn">
+                                    <button type="button" class="btn btn-default" title="查看源码">
+                                        <a href="https://github.com/liguifa/gdky" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                    </button>
+                                    <button type="button" class="btn btn-default" title="查看网站">
+                                        <a href="http://www.gdky.top" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 第三个 -->
+                        <div class="panel panel-default pojection noDisplay">
+                            <div class="panel-heading">三度调查系统</div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>语言</th>
+                                            <th>名称</th>
+                                            <th>人数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2014年(大二)</td>
+                                            <td>C#</td>
+                                            <td>三度调查系统</td>
+                                            <td>二人</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <div class="panel_change">
+                                    <button type="button" class="btn btn-default change_top" title="上一个">
+                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                    </button>
+                                </div>
+                                <div class="panel_btn">
+                                    <button type="button" class="btn btn-default" title="查看源码">
+                                        <a href="https://github.com/liguifa/ThreeTimes" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                    </button>
+                                    <button disabled="false" type="button" class="btn btn-default" title="查看网站">
+                                        <a href="#" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 第四个 -->
+                        <div class="panel panel-default pojection noDisplay">
+                            <div class="panel-heading">个人博客</div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>语言</th>
+                                            <th>名称</th>
+                                            <th>人数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2014—2015年(大三)</td>
+                                            <td>C#</td>
+                                            <td>个人博客</td>
+                                            <td>一人</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <div class="panel_change">
+                                    <button type="button" class="btn btn-default change_top" title="上一个">
+                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                    </button>
+                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                    </button>
+                                </div>
+                                <div class="panel_btn">
+                                    <button type="button" class="btn btn-default" title="查看源码">
+                                        <a href="https://github.com/liguifa/blog" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                    </button>
+                                    <button type="button" class="btn btn-default" title="查看网站">
+                                        <a href="http://liguifa.gdky.top" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 第四个 -->
+                        <div class="panel panel-default pojection noDisplay">
+                            <div class="panel-heading">校内淘</div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>时间</th>
+                                            <th>语言</th>
+                                            <th>名称</th>
+                                            <th>人数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2014年(大二)</td>
+                                            <td>C#</td>
+                                            <td>校内淘</td>
+                                            <td>二人</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <div class="panel_change">
+                                    <button type="button" class="btn btn-default change_top" title="上一个">
+                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                    </button>
+                                    <button disabled="false" type="button" class="btn btn-default change_bottom" title="下一个">
+                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                    </button>
+                                </div>
+                                <div class="panel_btn">
+                                    <button type="button" class="btn btn-default" title="查看源码">
+                                        <a href="https://github.com/liguifa/liaonei" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                    </button>
+                                    <button disabled="false" type="button" class="btn btn-default" title="查看网站">
+                                        <a href="#" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            &copy2015 李贵发 版权所有
+            <div class="btn-group-vertical floatButton">
+                <button type="button" class="btn btn-default" id="goTop" title="去顶部">
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                </button>
+                <button type="button" class="btn btn-default" id="mp3" title="音乐">
+                    <span class="glyphicon glyphicon-volume-down"></span>
+                </button>
+                <button type="button" class="btn btn-default" id="goBottom" title="去底部">
+                    <span class="glyphicon glyphicon-arrow-down"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

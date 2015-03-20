@@ -16,3 +16,12 @@ C:\Users\贵发\Desktop\Blog\Common\bin\Release\zh-Hans\EntityFramework.resource
 C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
 C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.dll
 C:\Users\贵发\Desktop\Blog\Common\obj\Release\Common.pdb
+E:\项目\blog\Common\bin\Release\Common.dll.config
+E:\项目\blog\Common\bin\Release\Common.dll
+E:\项目\blog\Common\bin\Release\Common.pdb
+E:\项目\blog\Common\bin\Release\EntityFramework.dll
+E:\项目\blog\Common\bin\Release\EntityFramework.xml
+E:\项目\blog\Common\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\项目\blog\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+E:\项目\blog\Common\obj\Release\Common.dll
+E:\项目\blog\Common\obj\Release\Common.pdb

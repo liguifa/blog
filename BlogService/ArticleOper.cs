@@ -66,5 +66,15 @@ namespace BlogService
             new HtmlOperation().AddHtml(path + url + ".cshtml", body, title,DateTime.Now.ToString("yyyy年MM月dd日"));
             return true;
         }
+
+        public Common.Models.Article GetArticleMsgByNum(string num)
+        {
+            return base.Search(d => d.Article_IsDel == false && d.Article_Url == num).First();
+        }
+
+        public string GetCalendarData(int month,int year)
+        {
+            return base.Search(d => d.Article_IsDel == false && d.Article_Time.Month == month && d.Article_Time.Year == year, d => d.Article_Time).ToList().ToJson();
+        }
     }
 }

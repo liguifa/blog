@@ -1,0 +1,18 @@
+body{
+	overflow: hidden;
+}
+#content_left{
+	width: 30%;
+}
+#content_right{
+	width: 68%;
+}
+.panel_btn{
+	float:right;
+}
+.noDisplay{
+	display: none;
+}
+.panel_change{
+	float:left;
+}

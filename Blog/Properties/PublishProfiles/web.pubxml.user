@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi56FpR8pe0GcbMZBuRzcCQAAAAACAAAAAAAQZgAAAAEAACAAAAA8H9EZqzzZZ+0M1/16KJ9Ulqat7RWOkrK/+tTWabRVqgAAAAAOgAAAAAIAACAAAADQAz1BZTqLGI/M1ma5Xsutmb1HulZHASf/seZwULZUfiAAAAAjGSuDWNmgFjFYYaYvl5PpnTkHcnPc2vHrq8BzrfJnVUAAAACci++tMQUfXgko6EnDN0aPjJxTtGb/9OTXmPnPo1PHuOSk+J5bC/YSox4rio+kSzPeiwZ8utC+sVZpF/quymZI</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAokIFFvgJ+kWWzHTx0tgurAAAAAACAAAAAAAQZgAAAAEAACAAAACEGDmO5hSvPmkKANgngG6IPS4tE+zJMHKZ9ty6RU8KmwAAAAAOgAAAAAIAACAAAAC8siKRS1vg9b90AmYkJTAd9YNPgxpIQoEYR0fWvv9fmyAAAABGA+xCjv34EJkKow7lKXWhsWZRLLNaWPp8mF0PTOw2QEAAAACCAM3sqHSV0sp74c4Y5XX+Myy8GLbpY7KNU7TSVk+eryi7Z9Wn87pOFi1nu4WT3NNNQNtKDCvzhtkGBXhmDszp</EncryptedPassword>
     <_PublishTargetUrl>ftp://112.213.98.211/web</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
@@ -14,67 +14,67 @@
       <publishTime>01/20/2015 21:06:11</publishTime>
     </File>
     <File Include="bin/Blog.dll">
-      <publishTime>01/26/2015 19:05:06</publishTime>
+      <publishTime>03/19/2015 21:20:09</publishTime>
     </File>
     <File Include="bin/BlogData.dll">
-      <publishTime>01/26/2015 19:05:05</publishTime>
+      <publishTime>03/19/2015 21:20:07</publishTime>
     </File>
     <File Include="bin/BlogService.dll">
-      <publishTime>01/26/2015 19:05:05</publishTime>
+      <publishTime>03/19/2015 21:20:08</publishTime>
     </File>
     <File Include="bin/Common.dll">
-      <publishTime>01/26/2015 19:05:04</publishTime>
+      <publishTime>03/19/2015 21:20:06</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>01/20/2015 17:43:51</publishTime>
+      <publishTime>03/13/2015 15:50:15</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/20/2015 16:29:28</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
-      <publishTime>01/20/2015 16:29:30</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>01/20/2015 16:29:27</publishTime>
+      <publishTime>03/13/2015 15:50:19</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
-      <publishTime>07/10/2012 12:07:38</publishTime>
+      <publishTime>07/09/2013 11:04:48</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>01/20/2015 16:29:30</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/System.Net.Http.WebRequest.dll">
-      <publishTime>07/10/2012 12:07:38</publishTime>
+      <publishTime>07/09/2013 11:04:48</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/20/2015 16:29:29</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>01/20/2015 16:29:31</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>01/20/2015 16:29:31</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/20/2015 16:29:29</publishTime>
+      <publishTime>03/13/2015 15:50:16</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/20/2015 16:29:28</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>01/20/2015 16:29:29</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>01/20/2015 16:29:29</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>01/20/2015 16:29:29</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
-      <publishTime>01/20/2015 17:43:54</publishTime>
+      <publishTime>03/13/2015 15:50:16</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
-      <publishTime>01/20/2015 16:29:33</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.resources.dll">
       <publishTime>07/09/2013 11:34:42</publishTime>
@@ -83,127 +83,220 @@
       <publishTime>07/09/2013 11:34:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
-      <publishTime>01/20/2015 16:29:33</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
-      <publishTime>01/20/2015 16:29:33</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:17</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
-      <publishTime>01/20/2015 16:29:32</publishTime>
+      <publishTime>03/13/2015 15:50:18</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>01/20/2015 16:29:15</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/20/2015 16:29:33</publishTime>
+      <publishTime>03/13/2015 15:50:12</publishTime>
     </File>
     <File Include="Themes/Css/global.css">
-      <publishTime>01/23/2015 18:59:38</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
+    </File>
+    <File Include="Themes/Css/person.css">
+      <publishTime>03/15/2015 17:59:48</publishTime>
     </File>
     <File Include="Themes/Images/1.jpg">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Images/2.jpg">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Images/3.jpg">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Images/79.jpg">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Images/me.png">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
+    </File>
+    <File Include="Themes/Images/person.jpg">
+      <publishTime>03/15/2015 18:04:47</publishTime>
     </File>
     <File Include="Themes/Images/Thumbs.db">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Js/global.js">
-      <publishTime>01/20/2015 17:12:54</publishTime>
+      <publishTime>03/17/2015 21:39:31</publishTime>
     </File>
     <File Include="Themes/Js/jquery.min.js">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
+    </File>
+    <File Include="Themes/Js/person.js">
+      <publishTime>03/15/2015 18:00:06</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap-theme.css">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap-theme.css.map">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap-theme.min.css">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap.css">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap.css.map">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/css/bootstrap.min.css">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/fonts/glyphicons-halflings-regular.eot">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/fonts/glyphicons-halflings-regular.svg">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/fonts/glyphicons-halflings-regular.woff">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:08</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/js/bootstrap.js">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/js/bootstrap.min.js">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Themes/Lib/bootstrap/js/npm.js">
-      <publishTime>01/20/2015 16:30:12</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/.gitattributes">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/.gitignore">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/css/wangEditor-1.1.0-min.css">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/css/wangEditor-1.1.0.less">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_basic.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_head.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_indent.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_insertCode.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_menuConfig.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/demo_upload.html">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/css/font-awesome-ie7.min.css">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/css/font-awesome.min.css">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/cssWidthCDN/font-awesome.min_widthCDN.css">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/fonts/fontawesome-webfont.eot">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/fonts/fontawesome-webfont.svg">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/fonts/fontawesome-webfont.woff">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/fontawesome-4.2.0/fonts/FontAwesome.otf">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/js/jquery-1.10.2.min.js">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/js/wangEditor-1.1.0-min.js">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/js/wangEditor-1.1.0.js">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/js/wangHighLighter-1.0.0-min.js">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Themes/Lib/wangEditor/README.md">
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Themes/Music/index.mp3">
-      <publishTime>01/20/2015 16:30:11</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Views/Admin/AddArticle.cshtml">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Views/Admin/AddArticleIn.cshtml">
+      <publishTime>03/13/2015 15:50:09</publishTime>
+    </File>
+    <File Include="Views/Admin/ArticleManagement.cshtml">
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Views/Admin/Index.cshtml">
-      <publishTime>01/23/2015 20:49:33</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Views/Admin/LoginFailure.cshtml">
-      <publishTime>01/23/2015 20:36:48</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Views/Articles/2015012021021111.cshtml">
-      <publishTime>01/21/2015 17:06:45</publishTime>
+      <publishTime>03/15/2015 23:30:05</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>03/16/2015 22:01:43</publishTime>
     </File>
     <File Include="Views/Home/Content.cshtml">
-      <publishTime>01/21/2015 17:08:49</publishTime>
+      <publishTime>03/15/2015 23:29:17</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/23/2015 20:28:13</publishTime>
+      <publishTime>03/15/2015 20:38:34</publishTime>
     </File>
     <File Include="Views/Home/List.cshtml">
-      <publishTime>01/23/2015 20:20:59</publishTime>
+      <publishTime>03/17/2015 21:33:01</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>01/20/2015 16:29:15</publishTime>
+      <publishTime>03/13/2015 15:50:09</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/20/2015 21:29:07</publishTime>
+      <publishTime>03/15/2015 13:13:21</publishTime>
     </File>
   </ItemGroup>
 </Project>

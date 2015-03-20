@@ -125,13 +125,16 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
     <Content Include="Themes\Css\global.css" />
+    <Content Include="Themes\Css\person.css" />
     <Content Include="Themes\Images\1.jpg" />
     <Content Include="Themes\Images\2.jpg" />
     <Content Include="Themes\Images\3.jpg" />
     <Content Include="Themes\Images\79.jpg" />
     <Content Include="Themes\Images\me.png" />
+    <Content Include="Themes\Images\person.jpg" />
     <Content Include="Themes\Js\global.js" />
     <Content Include="Themes\Js\jquery.min.js" />
+    <Content Include="Themes\Js\person.js" />
     <Content Include="Themes\Lib\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Themes\Lib\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Themes\Lib\bootstrap\css\bootstrap.css" />
@@ -205,6 +208,7 @@
     <Content Include="Themes\Lib\wangEditor\fontawesome-4.2.0\fonts\FontAwesome.otf" />
     <Content Include="Themes\Lib\wangEditor\README.md" />
     <Content Include="Views\Admin\AddArticleIn.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogService\BlogService.csproj">
