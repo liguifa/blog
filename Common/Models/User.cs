@@ -17,6 +17,7 @@ namespace Common.Models
         public User()
         {
             this.Articles = new HashSet<Article>();
+            this.demoes = new HashSet<demo>();
         }
     
         public long User_Id { get; set; }
@@ -25,5 +26,6 @@ namespace Common.Models
         public bool User_IsDel { get; set; }
     
         public virtual ICollection<Article> Articles { get; set; }
+        public virtual ICollection<demo> demoes { get; set; }
     }
 }

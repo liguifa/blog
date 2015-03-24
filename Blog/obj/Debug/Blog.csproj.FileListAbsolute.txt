@@ -188,3 +188,5 @@ E:\项目\blog\Blog\bin\zh-Hans\EntityFramework.resources.dll
 E:\项目\blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
 E:\项目\blog\Blog\obj\Debug\Blog.dll
 E:\项目\blog\Blog\obj\Debug\Blog.pdb
+E:\项目\blog\Blog\bin\Blog.dll.CodeAnalysisLog.xml
+E:\项目\blog\Blog\bin\Blog.dll.lastcodeanalysissucceeded

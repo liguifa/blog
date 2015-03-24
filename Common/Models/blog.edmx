@@ -28,6 +28,17 @@
           <Property Name="Article_Title" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Article_Abstract" Type="varchar" MaxLength="400" Nullable="false" />
         </EntityType>
+        <EntityType Name="demo">
+          <Key>
+            <PropertyRef Name="demo_Id" />
+          </Key>
+          <Property Name="demo_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="demo_image" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="demo_Url" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="demo_Title" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="demo_User" Type="bigint" Nullable="false" />
+          <Property Name="demo_IsDel" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="User_Id" />
@@ -46,6 +57,18 @@
             </Principal>
             <Dependent Role="Articles">
               <PropertyRef Name="Article_UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_demo_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="demo" Type="Self.demo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="demo">
+              <PropertyRef Name="demo_User" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -83,10 +106,15 @@
         <EntityContainer Name="liguifaModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Articles" EntityType="Self.Articles" Schema="liguifa" store:Type="Tables" />
+          <EntitySet Name="demo" EntityType="Self.demo" Schema="liguifa" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="liguifa" store:Type="Tables" />
           <AssociationSet Name="FK_Articles_Users" Association="Self.FK_Articles_Users">
             <End Role="Users" EntitySet="Users" />
             <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_demo_Users" Association="Self.FK_demo_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="demo" EntitySet="demo" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -126,6 +154,7 @@
           <Property Name="User_Pwd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="User_IsDel" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Articles" Relationship="Self.FK_Articles_Users" FromRole="Users" ToRole="Articles" />
+          <NavigationProperty Name="demoes" Relationship="liguifaModel.FK_demo_Users" FromRole="User" ToRole="demo" />
         </EntityType>
         <Association Name="FK_Articles_Users">
           <End Role="Users" Type="Self.User" Multiplicity="1" />
@@ -177,6 +206,11 @@
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
+          <EntitySet Name="demoes" EntityType="liguifaModel.demo" />
+          <AssociationSet Name="FK_demo_Users" Association="liguifaModel.FK_demo_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="demo" EntitySet="demoes" />
+          </AssociationSet>
         </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -189,6 +223,30 @@
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
+        <EntityType Name="demo">
+          <Key>
+            <PropertyRef Name="demo_Id" />
+          </Key>
+          <Property Name="demo_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="demo_image" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="demo_Url" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="demo_Title" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="demo_User" Type="Int64" Nullable="false" />
+          <Property Name="demo_IsDel" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="liguifaModel.FK_demo_Users" FromRole="demo" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_demo_Users">
+          <End Type="liguifaModel.User" Role="User" Multiplicity="1" />
+          <End Type="liguifaModel.demo" Role="demo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="demo">
+              <PropertyRef Name="demo_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -254,6 +312,18 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="liguifaModel.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="liguifaModel.Store.sp_upgraddiagrams" />
+          <EntitySetMapping Name="demoes">
+            <EntityTypeMapping TypeName="liguifaModel.demo">
+              <MappingFragment StoreEntitySet="demo">
+                <ScalarProperty Name="demo_IsDel" ColumnName="demo_IsDel" />
+                <ScalarProperty Name="demo_User" ColumnName="demo_User" />
+                <ScalarProperty Name="demo_Title" ColumnName="demo_Title" />
+                <ScalarProperty Name="demo_Url" ColumnName="demo_Url" />
+                <ScalarProperty Name="demo_image" ColumnName="demo_image" />
+                <ScalarProperty Name="demo_Id" ColumnName="demo_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -63,5 +63,21 @@ namespace Blog.Controllers
         {
             return new ArticleOper().GetCalendarData(month,year);
         }
+
+        public ActionResult Study()
+        {
+            return View();
+        }
+
+        public ActionResult Dome(string pageIndex)
+        {
+            return View();
+        }
+
+        public PartialViewResult DemoData(string pageIndex)
+        {
+            ViewBag.demos = new DemoOper().GetListToPage(pageIndex);
+            return PartialView();
+        }
     }
 }

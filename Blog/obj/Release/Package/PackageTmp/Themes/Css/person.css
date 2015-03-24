@@ -1,6 +1,3 @@
-body{
-	overflow: hidden;
-}
 #content_left{
 	width: 30%;
 }
@@ -15,4 +12,13 @@ body{
 }
 .panel_change{
 	float:left;
+}
+.person_word ul {
+    list-style:none;
+}
+    .person_word ul li {
+        margin:12px 0px;
+    }
+.Introduction {
+    text-indent:2em;
 }

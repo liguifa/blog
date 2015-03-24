@@ -31,6 +31,5 @@ E:\项目\blog\Common\bin\Debug\Common.pdb
 E:\项目\blog\Common\bin\Debug\EntityFramework.dll
 E:\项目\blog\Common\bin\Debug\EntityFramework.xml
 E:\项目\blog\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
-E:\项目\blog\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 E:\项目\blog\Common\obj\Debug\Common.dll
 E:\项目\blog\Common\obj\Debug\Common.pdb

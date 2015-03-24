@@ -33,6 +33,7 @@
     <Property Name="User_Pwd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="User_IsDel" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Articles" Relationship="Self.FK_Articles_Users" FromRole="Users" ToRole="Articles" />
+    <NavigationProperty Name="demoes" Relationship="liguifaModel.FK_demo_Users" FromRole="User" ToRole="demo" />
   </EntityType>
   <Association Name="FK_Articles_Users">
     <End Role="Users" Type="Self.User" Multiplicity="1" />
@@ -84,6 +85,11 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="demoes" EntityType="liguifaModel.demo" />
+    <AssociationSet Name="FK_demo_Users" Association="liguifaModel.FK_demo_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="demo" EntitySet="demoes" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
@@ -96,4 +102,28 @@
     <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
+  <EntityType Name="demo">
+    <Key>
+      <PropertyRef Name="demo_Id" />
+    </Key>
+    <Property Name="demo_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="demo_image" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="demo_Url" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="demo_Title" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="demo_User" Type="Int64" Nullable="false" />
+    <Property Name="demo_IsDel" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="liguifaModel.FK_demo_Users" FromRole="demo" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_demo_Users">
+    <End Type="liguifaModel.User" Role="User" Multiplicity="1" />
+    <End Type="liguifaModel.demo" Role="demo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="demo">
+        <PropertyRef Name="demo_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

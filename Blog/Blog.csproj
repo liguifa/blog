@@ -126,12 +126,14 @@
     <Content Include="Global.asax" />
     <Content Include="Themes\Css\global.css" />
     <Content Include="Themes\Css\person.css" />
+    <Content Include="Themes\Css\demo.css" />
     <Content Include="Themes\Images\1.jpg" />
     <Content Include="Themes\Images\2.jpg" />
     <Content Include="Themes\Images\3.jpg" />
     <Content Include="Themes\Images\79.jpg" />
     <Content Include="Themes\Images\me.png" />
     <Content Include="Themes\Images\person.jpg" />
+    <Content Include="Themes\Js\demo.js" />
     <Content Include="Themes\Js\global.js" />
     <Content Include="Themes\Js\jquery.min.js" />
     <Content Include="Themes\Js\person.js" />
@@ -162,6 +164,7 @@
     <Content Include="Themes\Lib\wangEditor\js\wangEditor-1.1.0.js" />
     <Content Include="Themes\Lib\wangEditor\js\wangHighLighter-1.0.0-min.js" />
     <Content Include="Themes\Music\index.mp3" />
+    <Content Include="Themes\Update\Images\112233445566.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -209,6 +212,12 @@
     <Content Include="Themes\Lib\wangEditor\README.md" />
     <Content Include="Views\Admin\AddArticleIn.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Study.cshtml" />
+    <Content Include="Views\Home\Dome.cshtml" />
+    <Content Include="Views\Home\DemoData.cshtml" />
+    <Content Include="Views\Home\Header.cshtml" />
+    <Content Include="Views\Home\Footer.cshtml" />
+    <Content Include="Views\Home\Right.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogService\BlogService.csproj">

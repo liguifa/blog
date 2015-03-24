@@ -4,6 +4,9 @@
     var title = "";
     switch (type)
     {
+        case "Undex":
+            num = 0;
+            break;
         case "Technology":
             num = 1;
             title = "分类:技术学习";
@@ -15,6 +18,15 @@
         case "Essay":
             num = 3;
             title = "分类:美文分享";
+            break;
+        case "Study":
+            num = 4;
+            break;
+        case "Demo":
+            num = 5;
+            break;
+        case "Person":
+            num = 6;
             break;
     }
     $(".navbar-nav li:eq(" + num + ")").addClass("active");
@@ -169,4 +181,17 @@ $(document).ready(function ()
     setTime();
     SetCalendar();
     setInterval("setTime()", 1000);
+
+    //多说公共JS代码 start (一个网页只需插入一次)
+    var duoshuoQuery = { short_name: "liguifablog" };
+    (function ()
+    {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript'; ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    //多说公共JS代码 end
 });

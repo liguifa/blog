@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Email.cs" />
     <Compile Include="ListExtension.cs" />
     <Compile Include="Gboal.cs" />
     <Compile Include="HtmlOperation.cs" />
@@ -70,6 +71,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>blog.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\demo.cs">
+      <DependentUpon>blog.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>blog.tt</DependentUpon>

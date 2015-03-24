@@ -9,7 +9,7 @@
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta name="keywords" content="程序员,博客,个人博客,发哥,发哥的网站" />
     <meta name="description" content="发哥，一个有梦想，有个性的平凡人..." />
-    <title>发哥的网站</title>
+    <title>平凡的程序员</title>
     <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/Themes/Css/global.css" />
@@ -37,86 +37,7 @@
 </head>
 <body>
     <div id="page">
-        <!-- 顶部开始 -->
-        <div id="header">
-            <!-- 顶部部分开始 -->
-            <div id="header_top">
-                <div id="header_top_left">
-                    <img src="/Themes/Images/me.png" />
-                    <div>
-                        <h3>发哥的网站</h3>
-                        <span>道 可道 非常道 名 可名 非常名</span>
-                    </div>
-                </div>
-                <div id="header_top_right">
-                    <span id="header_top_right_top">2015年01月17日，星期六</span>
-                    <hr />
-                    <span id="header_top_right_bottom">登录：<a data-toggle="modal" data-target=".login">本地账号</a></span>
-
-                    <!-- Small modal -->
-                    <div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title"><strong>用户登录</strong></h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="input-group" style="margin:10px 10px 20px 100px">
-                                        <span class="input-group-addon" style="width:10px;">用户名</span>
-                                        <input type="text" class="form-control" name="username" id="username" style="width:300px;">&nbsp;&nbsp;
-                                    </div>
-                                    <div class="input-group" style="margin:0px 10px 0px 100px">
-                                        <span class="input-group-addon" style="width:10px;">密&nbsp;&nbsp;&nbsp;码</span>
-                                        <input type="password" class="form-control" name="password" id="password" style="width:300px;">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" onclick="login()">登录</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 音乐 -->
-                <audio src="Music/index.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
-            </div>
-            <!-- 导航条开始 -->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid" id="nav_main">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand">Liguifa</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/Home/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                            <li><a href="/Home/List/Technology">技术学习</a></li>
-                            <li><a href="/Home/List/Edit">编程博文</a></li>
-                            <li><a href="/Home/List/Essay">美文分享</a></li>
-                            <li><a href="/Home/List/Technology">个人简介</a></li>
-                        </ul>
-                        <div id="search">
-                            <form class="navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="搜索..." />
-                                </div>
-                                <button type="submit" class="btn btn-default">搜一下</button>
-                            </form>
-                        </div>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-            <!-- 导航条结束 -->
-        </div>
+        @Html.Partial("Header");
         <div id="content">
             <div id="content_left">
                 <div class="panel panel-default" id="Art">
@@ -145,117 +66,9 @@
                 <!-- 多说公共JS代码 end -->
             </div>
 
-            <div id="content_right">
-                <div class="panel panel-default">
-                    <div class="panel-heading">期待2015</div>
-                    <div class="panel-body">
-                        有梦想的平凡人
-                    </div>
-                </div>
-
-                <div class="widget widget_calendar">
-                    <div id="calendar_wrap">
-                        <table id="wp-calendar">
-                            <caption>2015年一月</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col" title="星期一">一</th>
-                                    <th scope="col" title="星期二">二</th>
-                                    <th scope="col" title="星期三">三</th>
-                                    <th scope="col" title="星期四">四</th>
-                                    <th scope="col" title="星期五">五</th>
-                                    <th scope="col" title="星期六">六</th>
-                                    <th scope="col" title="星期日">日</th>
-                                </tr>
-                            </thead>
-
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3" id="prev" class="pad">&nbsp;</td>
-                                    <td class="pad">&nbsp;</td>
-                                    <td colspan="3" id="next" class="pad">&nbsp;</td>
-                                </tr>
-                            </tfoot>
-
-                            <tbody>
-                                @*<tr>
-                                    <td colspan="3" class="pad">&nbsp;</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td><a href="http://www.yunxi.me/archives/date/2015/01/08" title="有多少爱可以重来">8</a></td>
-                                    <td><a href="http://www.yunxi.me/archives/date/2015/01/09" title="流年已末，人事未了缘深缘浅是一种宿命赴一场告别的约会">9</a></td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
-                                    <td id="today">17</td>
-                                    <td>18</td>
-                                </tr>
-                                <tr>
-                                    <td>19</td>
-                                    <td>20</td>
-                                    <td>21</td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                    <td>24</td>
-                                    <td>25</td>
-                                </tr>
-                                <tr>
-                                    <td>26</td>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>30</td>
-                                    <td>31</td>
-                                    <td class="pad" colspan="1">&nbsp;</td>
-                                </tr>*@
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">开怀一笑</div>
-                    <div class="panel-body joke">
-                        宿舍一哥们拿着杀虫剂往身上各角落喷了一遍，我好奇地问道：“都没蚊子了，还喷什么杀虫剂？”哥们说：“出去约会，没香水了，拿这凑合一下”我凌乱了。。。
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">今日美图</div>
-                    <div class="panel-body panel_img">
-                        <img src="http://area.sinaapp.com/bingImg" alt="...">
-                    </div>
-                </div>
-            </div>
+            @Html.Partial("Right");
         </div>
-        <div id="footer">
-            &copy2015 李贵发 版权所有
-            <div class="btn-group-vertical floatButton">
-                <button type="button" class="btn btn-default" id="goTop" title="去顶部">
-                    <span class="glyphicon glyphicon-arrow-up"></span>
-                </button>
-                <button type="button" class="btn btn-default" id="mp3" title="音乐">
-                    <span class="glyphicon glyphicon-volume-down"></span>
-                </button>
-                <button type="button" class="btn btn-default" id="goBottom" title="去底部">
-                    <span class="glyphicon glyphicon-arrow-down"></span>
-                </button>
-            </div>
-        </div>
+        @Html.Partial("Footer");
     </div>
 </body>
 </html>

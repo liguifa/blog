@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,12 @@ namespace Blog
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);          
+        }
+
+        protected void Application_AcquireRequestState(object sender, EventArgs e)
+        {
+            //SendEmailOperation.SendEmail("1048229044@qq.com", (sender as HttpApplication).Context.Request.UserHostAddress);
         }
     }
 }

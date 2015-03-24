@@ -8,7 +8,7 @@
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta name="keywords" content="程序员,博客,个人博客,发哥,发哥的网站" />
     <meta name="description" content="发哥，一个有梦想，有个性的平凡人..." />
-    <title>发哥的网站</title>
+    <title>平凡的程序员</title>
     <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/Themes/Css/global.css" />
@@ -17,91 +17,16 @@
     <script type="text/javascript" src="/Themes/Lib/bootstrap/Js/bootstrap.min.js"></script>
     <script src="/Themes/Js/global.js"></script>
     <script type="text/javascript" src="/Themes/Js/person.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            setNavActive("Person");
+        });
+    </script>
 </head>
 <body>
     <div id="page">
-        <!-- 顶部开始 -->
-        <div id="header">
-            <!-- 顶部部分开始 -->
-            <div id="header_top">
-                <div id="header_top_left">
-                    <img src="/Themes/Images/me.png" />
-                    <div>
-                        <h3>发哥的网站</h3>
-                        <span>道 可道 非常道 名 可名 非常名</span>
-                    </div>
-                </div>
-                <div id="header_top_right">
-                    <span id="header_top_right_top">2015年01月17日，星期六</span>
-                    <hr />
-                    <span id="header_top_right_bottom">登录：<a data-toggle="modal" data-target=".login">本地账号</a></span>
-
-                    <!-- Small modal -->
-                    <div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title"><strong>用户登录</strong></h4>
-                                </div>
-                                <form action="/Admin/Index" method="post">
-                                    <div class="modal-body">
-                                        <div class="input-group" style="margin:10px 10px 20px 100px">
-                                            <span class="input-group-addon" style="width:10px;">用户名</span>
-                                            <input type="text" class="form-control" name="username" id="username" style="width:300px;">&nbsp;&nbsp;
-                                        </div>
-                                        <div class="input-group" style="margin:0px 10px 0px 100px">
-                                            <span class="input-group-addon" style="width:10px;">密&nbsp;&nbsp;&nbsp;码</span>
-                                            <input type="password" class="form-control" name="password" id="password" style="width:300px;">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary" id="login">登录</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 音乐 -->
-                <audio id="music" src="/Themes/Music/index.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
-            </div>
-            <!-- 导航条开始 -->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid" id="nav_main">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand">Liguifa</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/Home/Index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                            <li><a href="/Home/List/Technology/1.html">技术学习</a></li>
-                            <li><a href="/Home/List/Edit/1.html">编程博文</a></li>
-                            <li><a href="/Home/List/Essay/1.html">美文分享</a></li>
-                            <li class="active"><a href="/Home/List/Technology.html">个人简介</a></li>
-                        </ul>
-                        <div id="search">
-                            <form class="navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="搜索..." />
-                                </div>
-                                <button type="submit" class="btn btn-default">搜一下</button>
-                            </form>
-                        </div>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-            <!-- 导航条结束 -->
-        </div>
+        @Html.Partial("Header");
         <div id="content">
             <div id="content_left" class="panel panel-default">
                 <div class="panel-body">
@@ -113,10 +38,10 @@
                         </div>
                         <div class="person_word">
                             <ul>
-                                <li>姓名：李贵发</li>
-                                <li>性别：看的出来</li>
-                                <li>专业：计算机科学与技术</li>
-                                <li>学校：大连工业大学</li>
+                                <li>Hi 我是李贵发</li>
+                                <li>大连工业大学</li>
+                                <li>12级 计算机专业</li>
+                                <li>gihub:github.com/liguifa</li>
                             </ul>
                         </div>
                     </div>
@@ -124,9 +49,9 @@
                         <ul class="list-group">
                             <li class="list-group-item">语言：熟悉C#、PHP，会C++</li>
                             <li class="list-group-item">数据库：mssql、mysql</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">获奖情况：全国二等奖一次，省级三等奖一次，省级一等奖一次</li>
+                            <li class="list-group-item">喜欢方向：嵌入式</li>
+                            <li class="list-group-item">物欲横流的世界里，真正能坚持内心想法的人很稀少了，不过，每个人都有自己看待自尊的方式，平凡的人做平凡的事<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---平凡的程序员</li>
                         </ul>
                     </div>
                 </div>
@@ -157,7 +82,16 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <p class="Introduction">
+                                    这个项目是大连工业大学无机学院的一个实验教学中心的网站，功能包括：中心介绍、中心新闻(通知)发布、实验内容的介绍、成果的展示、实验资源的展示、教学课件的发布、文件下载、学生专业方向选择、学生实验的选择、学生毕业课题的选择、学生的管理等，其中中心介绍是一个静态页面，中心新闻、中心通知、实验内容、成果展示、实验资源、教学课件、文件下载是通过网站后台管理的，学生专业方向选择、学生实验选择、毕业课题选择需学生登录后操作，管理员可以对网站管理。
+                                </p><br />
+                                <p class="Introduction">
+                                    项目用户浏览前端使用jquery和bootstap，管理员和学生操作的前端使用jquery和easyui。网站后端使用asp.net编写，其中我们使用了.NET MVC框架，数据库操作使用了EF框架，数据库是mssql2012。项目整体使用三层架构的方法做项目的架构。
+                                </p><br />
+                                <p class="Introduction">
+                                    这个项目用时1个月开发网站，在项目中我们二人开发网站，二个均编写前台和后台。
+                                </p>
+                                <br /><br />
                                 <div class="panel_change">
                                     <button disabled="false" type="button" class="btn btn-default change_top" title="上一个">
                                         <span class="glyphicon glyphicon-chevron-up">上一个</span>
@@ -171,7 +105,7 @@
                                         <a href="https://github.com/liguifa/wlhx" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
                                     </button>
                                     <button type="button" class="btn btn-default" title="查看网站">
-                                        <a href="http://wjcl.yjzx.dlpu.edu.com" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                        <a href="http://wjcl.yjzx.dlpu.edu.cn" target="_blank" class="glyphicon glyphicon-search">网站</a>
                                     </button>
                                 </div>
                             </div>
@@ -199,24 +133,27 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
-                                <div class="panel_change">
-                                    <button type="button" class="btn btn-default change_top" title="上一个">
-                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
-                                    </button>
-                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
-                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
-                                    </button>
-                                </div>
-                                <div class="panel_btn">
-                                    <button type="button" class="btn btn-default" title="查看源码">
-                                        <a href="https://github.com/liguifa/gdky" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
-                                    </button>
-                                    <button type="button" class="btn btn-default" title="查看网站">
-                                        <a href="http://www.gdky.top" target="_blank" class="glyphicon glyphicon-search">网站</a>
-                                    </button>
-                                </div>
-                            </div>
+                                <p class="Introduction">这个项目是我大二时做的一个大创项目，项目的名称叫高校开源社区,项目的功能包括：开源资讯、开源技术、开源项目、代码分享、博客建设、问答、茶舍、学习资源，其中凡是登陆到本站的用户均可以发布所有类型的文章，可以随意浏览其他用户发布的文章，可以写博客等。</p><br />
+                                <p class="Introduction">项目前端使用jquery，由于不是主做前端的加上没有美工做设计，所以前端本不是很美观。项目后端使用php，用来ThinkPHP，但是开发是为了学习，并没有完全用框架的方法，我在其中添加了Lib文件夹，里面包括PHP操作mysql的函数的封装，数据库操作DAL，业务逻辑BLL，公共方法Common</p><br />
+                                <p class="Introduction">这是我的第一个PHP项目，用时大约1个多月，这个网站从前端到后端均是我一人完成。</p>
+                                    <br /><br />
+                                    <div class="panel_change">
+                                        <button type="button" class="btn btn-default change_top" title="上一个">
+                                            <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                        </button>
+                                        <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                            <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                        </button>
+                                    </div>
+                                    <div class="panel_btn">
+                                        <button type="button" class="btn btn-default" title="查看源码">
+                                            <a href="https://github.com/liguifa/gdky" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                        </button>
+                                        <button type="button" class="btn btn-default" title="查看网站">
+                                            <a href="http://www.gdky.top" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                        </button>
+                                    </div>
+</div>
                         </div>
 
                         <!-- 第三个 -->
@@ -241,24 +178,27 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
-                                <div class="panel_change">
-                                    <button type="button" class="btn btn-default change_top" title="上一个">
-                                        <span class="glyphicon glyphicon-chevron-up">上一个</span>
-                                    </button>
-                                    <button type="button" class="btn btn-default change_bottom" title="下一个">
-                                        <span class="glyphicon glyphicon-chevron-down">下一个</span>
-                                    </button>
-                                </div>
-                                <div class="panel_btn">
-                                    <button type="button" class="btn btn-default" title="查看源码">
-                                        <a href="https://github.com/liguifa/ThreeTimes" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
-                                    </button>
-                                    <button disabled="false" type="button" class="btn btn-default" title="查看网站">
-                                        <a href="#" target="_blank" class="glyphicon glyphicon-search">网站</a>
-                                    </button>
-                                </div>
-                            </div>
+                                <p class="Introduction">这个项目是一个对员工进行调查的网站，当然是通过三个维度进行调查。功能包括：公司信息管理(添加集团公司、子公司管理)、调查人员信息管理、题库管理、调查管理(问卷管理、调查时间设置、答卷进度监控、导出问卷)、答卷进度监控、查看问卷结果总体情况、登陆系统答问卷。其中：登陆系统答问卷是公司员工可做,答卷进度监控、查看问卷结果总体情况公司联系人可做，其它网站管理员可做</p><br />
+                                <p class="Introduction">本项目用来对委托公司的员工进行三度调查并生成调查数据。网站基于ASP.NET，并且使用三层+MVC4+EF架构，前台使用EasyUI+JQuery，并且运用JSON+AJAX实现交互。数据库系统采用SQL sever2012。</p><br />
+                                <p class="Introduction">这个项目是学校老师给的一个项目，本来是说给一个公司做的，后来公司也没用，后来我们拿这个参加了第三届全国“triz”杯大学生创新方法大赛，在这个大赛中获全国二等奖，这个项目是我们暑假完成的，用时不到一个月(只算编码时间,写了二个多月的需求分析)，这个项目中我和同学共同完成，不分前后台。</p><br />
+                                    <br /><br />
+                                    <div class="panel_change">
+                                        <button type="button" class="btn btn-default change_top" title="上一个">
+                                            <span class="glyphicon glyphicon-chevron-up">上一个</span>
+                                        </button>
+                                        <button type="button" class="btn btn-default change_bottom" title="下一个">
+                                            <span class="glyphicon glyphicon-chevron-down">下一个</span>
+                                        </button>
+                                    </div>
+                                    <div class="panel_btn">
+                                        <button type="button" class="btn btn-default" title="查看源码">
+                                            <a href="https://github.com/liguifa/ThreeTimes" target="_blank" class="glyphicon glyphicon-folder-open">源码</a>
+                                        </button>
+                                        <button disabled="false" type="button" class="btn btn-default" title="查看网站">
+                                            <a href="#" target="_blank" class="glyphicon glyphicon-search">网站</a>
+                                        </button>
+                                    </div>
+</div>
                         </div>
 
                         <!-- 第四个 -->
@@ -283,7 +223,8 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <p class="Introduction">个人博客站，即这个网站，网站用于发布个人博客，网站基于ASP.NET，使用三层+MVC4+EF架构，前台使用Bootstrap，数据库系统采用SQL sever。</p><br />
+                                <p class="Introduction">希望通过本站提高自己，我每天都会完善，将学习变成习惯。</p><br /><br />
                                 <div class="panel_change">
                                     <button type="button" class="btn btn-default change_top" title="上一个">
                                         <span class="glyphicon glyphicon-chevron-up">上一个</span>
@@ -325,7 +266,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。<br /><br />
+                                <p class="Introduction">这是我开始编程的第一个项目，项目虽简单，但他对我有不一般的意义，把它放在这个做一个简单的纪念。</p><br /><br />
                                 <div class="panel_change">
                                     <button type="button" class="btn btn-default change_top" title="上一个">
                                         <span class="glyphicon glyphicon-chevron-up">上一个</span>
@@ -349,20 +290,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-            &copy2015 李贵发 版权所有
-            <div class="btn-group-vertical floatButton">
-                <button type="button" class="btn btn-default" id="goTop" title="去顶部">
-                    <span class="glyphicon glyphicon-arrow-up"></span>
-                </button>
-                <button type="button" class="btn btn-default" id="mp3" title="音乐">
-                    <span class="glyphicon glyphicon-volume-down"></span>
-                </button>
-                <button type="button" class="btn btn-default" id="goBottom" title="去底部">
-                    <span class="glyphicon glyphicon-arrow-down"></span>
-                </button>
-            </div>
-        </div>
+        @Html.Partial("Footer");
     </div>
 </body>
 </html>

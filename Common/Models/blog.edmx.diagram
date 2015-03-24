@@ -9,6 +9,8 @@
         <EntityTypeShape EntityType="liguifaModel.Article" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="liguifaModel.User" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="liguifaModel.FK_Articles_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="liguifaModel.demo" Width="1.5" PointX="3" PointY="5" />
+        <AssociationConnector Association="liguifaModel.FK_demo_Users" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

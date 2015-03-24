@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name="keywords" content="程序员,博客,个人博客,发哥,发哥的网站" />
+    <meta name="description" content="发哥，一个有梦想，有个性的平凡人..." />
+    <title>平凡的程序员</title>
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Css/global.css" />
+    <link href="~/Themes/Css/demo.css" rel="stylesheet" />
+    <script type="text/javascript" src="/Themes/Js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Themes/Lib/bootstrap/Js/bootstrap.min.js"></script>
+    <script src="~/Themes/Js/global.js"></script>
+    <script src="~/Themes/Js/demo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            setNavActive("Demo");
+        });
+    </script>
+</head>
+<body>
+    <div id="page">
+        @Html.Partial("Header");
+        <div id="content">
+            <div class="row" id="CodeList">
+
+            </div>
+        </div>
+        @Html.Partial("Footer");
+    </div>
+</body>
+</html>

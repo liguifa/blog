@@ -1,0 +1,64 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name="keywords" content="程序员,博客,个人博客,发哥,发哥的网站" />
+    <meta name="description" content="发哥，一个有梦想，有个性的平凡人..." />
+    <title>平凡的程序员</title>
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Lib/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Themes/Css/global.css" />
+    <script type="text/javascript" src="/Themes/Js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Themes/Js/global.js"></script>
+    <script type="text/javascript" src="/Themes/Lib/bootstrap/Js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            setNavActive("Study");
+        });
+    </script>
+</head>
+<body>
+    <div id="page">
+        @Html.Partial("Header");
+        <div id="content">
+            <div id="content_left">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="youkuplayer" style="width:480px;height:400px"></div>
+                        <script type="text/javascript" src="http://player.youku.com/jsapi">
+                            player = new YKU.Player('youkuplayer', {
+                                styleid: '0',
+                                client_id: '7827df11722cb6eb',
+                                vid: 'XOTE0NzE3MjUy'
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">Panel heading</div>
+                            <div class="panel-body">
+                                <p>...</p>
+                            </div>
+                            <!-- Table -->
+                            <table class="table">
+                                ...
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @Html.Partial("Right");
+        </div>
+        @Html.Partial("Footer");
+    </div>
+</body>
+</html>

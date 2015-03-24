@@ -23,6 +23,17 @@
     <Property Name="Article_Title" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Article_Abstract" Type="varchar" MaxLength="400" Nullable="false" />
   </EntityType>
+  <EntityType Name="demo">
+    <Key>
+      <PropertyRef Name="demo_Id" />
+    </Key>
+    <Property Name="demo_Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="demo_image" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="demo_Url" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="demo_Title" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="demo_User" Type="bigint" Nullable="false" />
+    <Property Name="demo_IsDel" Type="bit" Nullable="false" />
+  </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="User_Id" />
@@ -41,6 +52,18 @@
       </Principal>
       <Dependent Role="Articles">
         <PropertyRef Name="Article_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_demo_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="demo" Type="Self.demo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="demo">
+        <PropertyRef Name="demo_User" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -78,10 +101,15 @@
   <EntityContainer Name="liguifaModelStoreContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Articles" EntityType="Self.Articles" Schema="liguifa" store:Type="Tables" />
+    <EntitySet Name="demo" EntityType="Self.demo" Schema="liguifa" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="liguifa" store:Type="Tables" />
     <AssociationSet Name="FK_Articles_Users" Association="Self.FK_Articles_Users">
       <End Role="Users" EntitySet="Users" />
       <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_demo_Users" Association="Self.FK_demo_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="demo" EntitySet="demo" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

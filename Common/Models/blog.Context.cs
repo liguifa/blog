@@ -31,6 +31,7 @@ namespace Common.Models
         public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<Article> Articles { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<demo> demoes { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

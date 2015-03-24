@@ -1,0 +1,84 @@
+﻿ <!-- 顶部开始 -->
+<div id="header">
+    <!-- 顶部部分开始 -->
+    <div id="header_top">
+        <div id="header_top_left">
+            <img src="/Themes/Images/me.png" />
+            <div>
+                <h3>平凡的程序员</h3>
+                <span>道 可道 非常道 名 可名 非常名</span>
+            </div>
+        </div>
+        <div id="header_top_right">
+            <span id="header_top_right_top">2015年01月17日，星期六</span>
+            <hr />
+            <span id="header_top_right_bottom">登录：<a data-toggle="modal" data-target=".login">本地账号</a></span>
+
+            <!-- Small modal -->
+            <div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><strong>用户登录</strong></h4>
+                        </div>
+                        <form action="/Admin/Index" method="post">
+                            <div class="modal-body">
+                                <div class="input-group" style="margin:10px 10px 20px 100px">
+                                    <span class="input-group-addon" style="width:10px;">用户名</span>
+                                    <input type="text" class="form-control" name="username" id="username" style="width:300px;">&nbsp;&nbsp;
+                                </div>
+                                <div class="input-group" style="margin:0px 10px 0px 100px">
+                                    <span class="input-group-addon" style="width:10px;">密&nbsp;&nbsp;&nbsp;码</span>
+                                    <input type="password" class="form-control" name="password" id="password" style="width:300px;">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" id="login">登录</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 音乐 -->
+        <audio id="music" src="/Themes/Music/index.mp3" preload="auto" loop="loop" autoplay="autoplay"></audio>
+    </div>
+    <!-- 导航条开始 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid" id="nav_main">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Guifa Lee</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Home/Index">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                    <li><a href="/Home/List/Technology/1">技术学习</a></li>
+                    <li><a href="/Home/List/Edit/1">编程博文</a></li>
+                    <li><a href="/Home/List/Essay/1">美文分享</a></li>
+                    <li><a href="/Home/Study">学习视频</a></li>
+                    <li><a href="/Home/Dome">平凡小程序</a></li>
+                    <li><a href="/Home/About">个人简介</a></li>
+                </ul>
+                <div id="search">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索..." />
+                        </div>
+                        <button type="submit" class="btn btn-default">搜一下</button>
+                    </form>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 导航条结束 -->
+</div>

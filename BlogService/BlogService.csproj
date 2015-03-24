@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ArticleOper.cs" />
     <Compile Include="BaseBLL.cs" />
+    <Compile Include="DemoOper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserOper.cs" />
   </ItemGroup>

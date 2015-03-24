@@ -60,5 +60,17 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="liguifaModel.Store.sp_renamediagram" />
     <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="liguifaModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="demoes">
+      <EntityTypeMapping TypeName="liguifaModel.demo">
+        <MappingFragment StoreEntitySet="demo">
+          <ScalarProperty Name="demo_IsDel" ColumnName="demo_IsDel" />
+          <ScalarProperty Name="demo_User" ColumnName="demo_User" />
+          <ScalarProperty Name="demo_Title" ColumnName="demo_Title" />
+          <ScalarProperty Name="demo_Url" ColumnName="demo_Url" />
+          <ScalarProperty Name="demo_image" ColumnName="demo_image" />
+          <ScalarProperty Name="demo_Id" ColumnName="demo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
